@@ -11,6 +11,12 @@ To find your Cloudflare accountId and apiKey, log into Cloudflare and click "Ima
 
 If you have multiple image variants the first one will be selected unless you specify the "variant" parameter.
 
+If you want to convert png's and jpg's to webp's, set the "optimise" flag to true. The urls to the webp's can be found under 
+
+```
+provider_metadata.webp.url
+```
+
 ## Installation
 
 ```bash
@@ -41,6 +47,7 @@ module.exports = ({ env }) => ({
         accountId: env('STRAPI_UPLOAD_CLOUDFLARE_ACCOUNT_ID'),
         apiKey: env('STRAPI_UPLOAD_CLOUDFLARE_API_KEY'),
         variant: env('STRAPI_UPLOAD_CLOUDFLARE_VARIANT'),
+        optimise: env('STRAPI_UPLOAD_CLOUDFLARE_OPTIMISE'),
       },
     },
   },

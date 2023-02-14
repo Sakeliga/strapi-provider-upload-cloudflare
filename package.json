@@ -14,7 +14,6 @@
     "directories": {
         "lib": "./lib"
     },
-    "devDependencies": {},
     "homepage": "https://github.com/sanjay-io/strapi-provider-upload-cloudflare#readme",
     "bugs": {
         "url": "https://github.com/sanjay-io/strapi-provider-upload-cloudflare/issues"
@@ -27,7 +26,8 @@
     "license": "MIT",
     "dependencies": {
         "axios": "^0.24.0",
-        "form-data": "^4.0.0"
+        "form-data": "^4.0.0",
+        "sharp": "^0.31.3"
     },
     "strapi": {
         "isProvider": true
